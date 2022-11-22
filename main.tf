@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "maitocode"
+    workspaces {
+      name = "maitocode_infrastructure"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
